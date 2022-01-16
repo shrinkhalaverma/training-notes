@@ -1,0 +1,52 @@
+.column {
+  float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.topic {
+  background-color: lightgray;
+  width: 20%;
+  border-right: 2px solid black;
+  height: 100%;
+}
+
+.notes {
+  padding-left: 10px;
+}
+.t1 {
+  text-align: center;
+  text-decoration: black;
+  text-decoration: underline;
+  background-image: linear-gradient(45deg, black, transparent);
+  text-shadow: 2px 2px blue;
+}
+.cbody {
+  background: aqua;
+  background-image: linear-gradient(45deg, black, transparent);
+}
+
+.col-2 {
+  max-width: 70%;
+}
+.td1 {
+  text-align: 50px right;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: x-large;
+  text-decoration-line: underline;
+}
+.p1 {
+  border-style: solid;
+  border-style: groove;
+  font-size: 20px;
+  font-style: oblique;
+  text-align: center;
+  font-weight: bold;
+  background-color: mediumslateblue;
+}
