@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Training Notes</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./../../v2/assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./../../v2/css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+          <a class="navbar-brand" href="./../../v2/index.html"
+            >Start Bootstrap</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./../../v2/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./../../v2/html/html-home.html"
+                  >HTML</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./../../v2/CSS/css-home.html">CSS</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./../../v2/bootstrap/bootstrap-home.html"
+                  >Bootstrap</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./../../v2/javascript/js-home.html"
+                  >JavaScript</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Page Content-->
+      <section class="py-5">
+        <div class="container px-5 my-5">
+          <div class="row gx-5">
+            <div class="col-lg-10">
+              <!-- Post content-->
+              <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                  <!-- Post title-->
+                  <h1 class="fw-bolder mb-1">Functions</h1>
+                </header>
+                <!-- Preview image figure-->
+                <figure class="mb-4">
+                  <img
+                    class="img-fluid rounded"
+                    src="images/icons8-javascript.svg"
+                    alt="..."
+                  />
+                </figure>
+                <!-- Post content-->
+                <section class="mb-5">
+                  <p class="fs-5 mb-4">
+                    1. Functions-:<br />
+                    A particular business logic is called as function.<br />
+                    Functions are used to reuse business logic.<br />
+                    We have following type of functions<br />
+                    &nbsp&nbsp&nbsp&nbsp i) Named Functions<br />
+                    &nbsp&nbsp&nbsp&nbsp ii) Anonymous Functions<br />
+                    &nbsp&nbsp&nbsp&nbsp iii) Constructor Function
+                  </p>
+
+                  <p class="fs-5 mb-4">
+                    We can pass various parameters to functions.<br />
+                    &nbsp&nbsp&nbsp&nbsp i) Rest Parameters &nbsp&nbsp&nbsp&nbsp
+                    ii)Optional Parameters &nbsp&nbsp&nbsp&nbsp iii)Default
+                    Parameters
+                  </p>
+
+                  <p class="fs-5 mb-4">
+                    3. Numbers-:<br />
+                    &nbsp &nbsp Javascript supports decimal, double,
+                    hexadecimal, octal and binary numbers.<br />
+                    Example-:<br />
+                    &nbsp&nbsp&nbsp var decimal = 100<br />
+                    &nbsp&nbsp&nbsp console.log(decimal)<br />
+                    &nbsp&nbsp&nbsp var double = 12.43<br />
+                    &nbsp&nbsp&nbsp console.log(double)<br />
+                  </p>
+                  <h5>1. Named Function</h5>
+                  <p class="fs-5 mb-4">
+                    Function with name is called as named functions<br />
+
+                    Syntax<br />
+                    &nbsp&nbsp&nbsp//function definiton<br />
+                    &nbsp&nbsp&nbsp function function_name(parameters)<br />
+                    &nbsp&nbsp&nbsp{<br />
+                    &nbsp&nbsp&nbsp//business logic <br />
+                    &nbsp&nbsp&nbsp}<br />
+                    &nbsp&nbsp&nbsp//calling function <br />
+                    &nbsp&nbsp&nbsp function_name(arguments)<br />
+                  </p>
+                  <h5>2. Anonymous Function</h5>
+                  <p class="fs-5 mb-4">
+                    The function without name is called as anonymous function.
+                    these are also called as arrow functions or callback
+                    functions. we can represent arrow functions by '=>' arrow
+                    symbol. Arrow functions introduced in ES6. Arrow functions
+                    are more secured than named functions. anonymous functions
+                    utilize heap memory efficiently.<br />
+                    Syntax-:<br />
+                    &nbsp&nbsp&nbsp//function definition<br />
+                    &nbsp&nbsp&nbsp var / let variablename = (arguments) => {<br />
+                    &nbsp&nbsp&nbsp//business logic<br />
+                    &nbsp&nbsp&nbsp }<br />
+
+                    &nbsp&nbsp&nbsp//calling function<br />
+                    &nbsp&nbsp&nbsp variablename(parameters)<br />
+                  </p>
+                  <h5>3. Constructor Function</h5>
+                  <p class="fs-5 mb-4">
+                    Constructor Function is used to create class like structure.
+                    In constructor function everything (variables and functions)
+                    should start with 'this' keyword. We can create object to
+                    constructor using 'new' keyword.<br />
+                    Example-:<br />
+                    &nbsp&nbsp&nbsp function class_one()<br />
+                    &nbsp&nbsp&nbsp{<br />
+                    &nbsp&nbsp&nbsp this.wish = "Welcome to constructor
+                    functions"<br />
+                    &nbsp&nbsp&nbsp}<br />
+                    &nbsp&nbsp&nbsp var obj = new class_one()<br />
+                    &nbsp&nbsp&nbsp console.log(obj.wish)<br />
+                  </p>
+                </section>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+      <div class="container px-5">
+        <div
+          class="row align-items-center justify-content-between flex-column flex-sm-row"
+        >
+          <div class="col-auto">
+            <div class="small m-0 text-white">
+              Copyright &copy; Your Website 2021
+            </div>
+          </div>
+          <div class="col-auto">
+            <a class="link-light small" href="#!">Privacy</a>
+            <span class="text-white mx-1">&middot;</span>
+            <a class="link-light small" href="#!">Terms</a>
+            <span class="text-white mx-1">&middot;</span>
+            <a class="link-light small" href="#!">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
