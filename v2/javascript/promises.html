@@ -38,7 +38,6 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -282,7 +281,6 @@
         </div>
         <div><button onclick="history.back()">Go Back</button></div>
       </nav>
-
       <!-- Page Content-->
       <section class="py-5">
         <div class="container px-5 my-5">
@@ -293,78 +291,93 @@
                 <!-- Post header-->
                 <header class="mb-4">
                   <!-- Post title-->
-                  <h1 class="fw-bolder mb-1">HTTP Request Method</h1>
+                  <h1 class="fw-bolder mb-1">Promises and Callbacks</h1>
                 </header>
                 <!-- Preview image figure-->
                 <figure class="mb-4">
                   <img
                     class="img-fluid rounded"
-                    src="images/html5-with-wordmark-color.svg"
+                    src="images/icons8-javascript.svg"
                     alt="..."
                   />
                 </figure>
                 <!-- Post content-->
                 <section class="mb-5">
-                  <h5>HTTP</h5>
+                  <h5>Promises</h5>
                   <p class="fs-5 mb-4">
-                    Hyper Text Transfer Protocol it is used to enable /
-                    establish communication between client and server. HTTP
-                    works as request-response protocol between server and
-                    client. A web browser is client the computer who hosts the
-                    website is server.
+                    Promises are used to handle asynchronous operations in
+                    Javascript.<br />
+                    Promises are special Javascript objects.<br />
+                    Promises have two states<br />
+                    &nbsp&nbsp&nbsp 1. Success (resolve)<br />
+                    &nbsp&nbsp&nbsp 2.Failure (reject) <br />
+                    Promises can be created using 'Promise' class. 'Promise' is
+                    the predefined class in Javascript. Promises can be consumed
+                    using 'then()'
                   </p>
-                  <h5>HTTP request method</h5>
-                  <p class="fs-5 mb-4">
-                    There are various methods of HTTP requests Eg GET, POST,
-                    PUT, UPDATE, DELETE, CONNETCT,..etc of which two methods are
-                    commonly used for request-response between client and
-                    server<br />
-                    i) GET<br />
-                    ii)POST
-                  </p>
-                  <h5>Get Method</h5>
-                  <p class="fs-5 mb-4">
-                    GET requests can be cached.<br />
-                    GET remain in browser history.<br />
-                    GET requests can be bookmarked.<br />
-                    GET requests should not deal with sensitive data.<br />
-                    GET requests' length is restricted.<br />
-                    GET requests have excellent performance.<br />
-                    GET requests can not upload images.<br />
-                  </p>
-                  <h5>Post Method</h5>
-                  <p class="fs-5 mb-4">
-                    POST requests can not be cached.<br />
-                    POST requests do not remain in browser history.<br />
-                    POST requests can not be bookmarked.<br />
-                    POST requests can deal with sensitive data.<br />
-                    POST requests have no limit for length of data.<br />
-                    POST requests have good performance.<br />
-                    POST requests can upload images.<br />
-                    Example-:<br />
-                    &nbsp&nbsp&nbsp&lt;!doctype html&gt;<br />
-                    &nbsp&nbsp&nbsp&lt;html&gt;<br />
-                    &nbsp&nbsp&nbsp&lt;head&gt;&lt;/head&gt;<br />
-                    &nbsp&nbsp&nbsp&lt;body&gt;<br />
-                    &nbsp&nbsp&nbsp&lt;form action = "thanku.html" method =
-                    "POST" name = "my_form"&gt;<br />
-                    &nbsp&nbsp&nbsp&lt;label&gt;Username:- &lt;/label&gt;
-                    &nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;<br />
-                    &nbsp&nbsp&nbsp&lt;input type = "text" name = "uname"&gt;<br />
-                    &nbsp&nbsp&nbsp&lt;br&gt;&lt;br&gt;<br />
-                    &nbsp&nbsp&nbsp&lt;label&gt;Password:- &lt;/label&gt;
-                    &nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-                    &nbsp&nbsp&nbsp&lt;input type = "password" name =
-                    "upwd"&gt;<br />
-                    &nbsp&nbsp&nbsp&lt;br&gt;&lt;br&gt;<br />
-                    &nbsp&nbsp&nbsp&lt;input type = "submit" value = "Login"&gt;
-                    &nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-                    &nbsp&nbsp&nbsp&lt;input type = "reset" value =
-                    "Clear"&gt;<br />
-                    &nbsp&nbsp&nbsp&lt;/form&gt;<br />
 
-                    &lt;/body&gt;<br />
-                    &lt;/html&gt;
+                  <p>
+                    Example-:<br />
+                    &nbsp&nbsp&nbsp i) creating promise<br />
+                    &nbsp&nbsp&nbsp let my_promise = new Promise((resolve,
+                    reject)=>{<br />
+                    &nbsp&nbsp&nbsp resolve("Tomorrow i will be at home")<br />
+                    &nbsp&nbsp&nbsp })<br /><br />
+
+                    &nbsp&nbsp&nbsp ii) consume promise <br />
+                    my_promise.then((posRes)=>{ <br />
+                    console.log(posRes)<br />
+                    }, (errRes)=>{ <br />
+                    console.log(errRes) <br />
+                    })
+                  </p>
+                  <h5>Async and Await</h5>
+                  <p class="fs-5 mb-5">
+                    async and await-:<br />
+                    Netscape released above keywords in ES9.<br />
+                    Above keywords are used to increase code readability.<br />
+                    These keywords increase application performance.<br />
+                    Example-:<br />
+                  </p>
+                  <p>
+                    &nbsp&nbsp&nbsp let my_promise = new Promise((resolve,
+                    reject)=>{ <br />
+                    &nbsp&nbsp&nbsp resolve("Hello") <br />
+                    &nbsp&nbsp&nbsp }) <br />
+                    &nbsp&nbsp&nbsp async function my_fun() <br />
+                    &nbsp&nbsp&nbsp {<br />
+                    &nbsp&nbsp&nbsp let res = await my_promise <br />
+                    &nbsp&nbsp&nbsp console.log(res)<br />
+                    &nbsp&nbsp&nbsp }
+                  </p>
+                  <h5>Callbacks</h5>
+                  <p class="fs-5 mb-4">
+                    Passing one function to another function as argument is
+                    called as callback.<br />
+                    Example-:<br />
+                  </p>
+                  <p>
+                    &nbsp&nbsp&nbsp function fun_one(arg)<br />
+                    &nbsp&nbsp&nbsp {<br />
+                    &nbsp&nbsp&nbsp console.log(arg()) <br />
+                    &nbsp&nbsp&nbsp }<br />
+                    &nbsp&nbsp&nbsp fun_one(()=>{ <br />
+                    &nbsp&nbsp&nbsp return "Hello...!" <br />
+                    &nbsp&nbsp&nbsp })
+                  </p>
+                  <p class="fs-5 mb-4">Example-:<br /></p>
+                  <p>
+                    &nbsp&nbsp&nbsp function add(num, callback)<br />
+                    &nbsp&nbsp&nbsp {<br />
+                    &nbsp&nbsp&nbsp return callback((num + 5),false)<br />
+                    &nbsp&nbsp&nbsp }<br />
+
+                    &nbsp&nbsp&nbsp add(7,(addRes,error)=>{<br />
+                    &nbsp&nbsp&nbsp if(!error)<br />
+                    &nbsp&nbsp&nbsp {<br />
+                    &nbsp&nbsp&nbsp console.log(addRes)<br />
+                    &nbsp&nbsp&nbsp }<br />
+                    &nbsp&nbsp&nbsp })
                   </p>
                 </section>
               </article>
