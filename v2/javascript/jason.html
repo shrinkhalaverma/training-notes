@@ -40,6 +40,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./../../v2/index.html">Home</a>
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -121,7 +124,7 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./../../v2/CSS/css-home.html"
+                    <a class="dropdown-item" href="./../../v2/CSS/css-syntax.html"
                       >CSS Syntax</a
                     >
                   </li>
@@ -271,65 +274,118 @@
       </nav>
       <!-- Page Content-->
       <section class="py-5">
-        <div class="container px-5">
-          <h1 class="fw-bolder fs-5 mb-4">JavaScript</h1>
-          <div class="card border-0 shadow rounded-3 overflow-hidden">
-            <div class="card-body p-0">
-              <div class="row gx-0">
-                <div class="col-lg-6 col-xl-5 py-lg-5">
-                  <div class="p-4 p-md-5">
-                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">
-                      New
-                    </div>
-                    <div class="h2 fw-bolder">JavaScript</div>
-                    <p>
-                      JavaScript - The Complete Guide 2022 (Beginner + Advanced)
-                      Modern JavaScript from the beginning - all the way up to
-                      JS expert level! THE must-have JavaScript resource in
-                      2022.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-xl-7">
-                  <div
-                    class="bg-featured-blog"
-                    style="
-                      background-image: url('images/icons8-javascript.svg');
-                    "
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="py-5 bg-light">
-        <div class="container px-5">
+        <div class="container px-5 my-5">
           <div class="row gx-5">
-            <div class="col-xl-12 text-center">
-              <h2 class="fw-bolder fs-5 mb-4">Topics</h2>
-              <div class="mb-4">
-                <a
-                  class="link-dark"
-                  href="./../../v2/javascript/introduction-to-js.html"
-                  ><h3>1. Introduction to JavaScript</h3></a
-                >
-              </div>
-              <div class="mb-4">
-                <a class="link-dark" href="./../../v2/javascript/variables.html"
-                  ><h3>2.Variables</h3></a
-                >
-              </div>
-              <div class="mb-4">
-                <a class="link-dark" href="./../../v2/javascript/function.html"
-                  ><h3>3.Functions</h3></a
-                >
-              </div>
-              <div class="mb-4">
-                <a class="link-dark" href="./../../v2/javascript/prototype.html"
-                  ><h3>4.Prototype</h3></a
-                >
-              </div>
+            <div class="col-lg-10">
+              <!-- Post content-->
+              <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                  <!-- Post title-->
+                  <h1 class="fw-bolder mb-1">JSON</h1>
+                </header>
+                <!-- Preview image figure-->
+                <figure class="mb-4">
+                  <img
+                    class="img-fluid rounded"
+                    src="images/icons8-javascript.svg"
+                    alt="..."
+                  />
+                </figure>
+                <!-- Post content-->
+                <section class="mb-5">
+                  <h5>JSON</h5>
+                  <p class="fs-5 mb-4">
+                    JSON stands for JavaScript Object Notation.<br />
+                    JSON is used to share data over Network.<br />
+                    JSON is light weight as compared to XML.<br />
+                    Parsing (reading) of JSON is easy as compared to XML.<br />
+                    Syntax-:<br />
+                    &nbsp&nbsp&nbsp&nbsp Object &nbsp&nbsp&nbsp {}<br />
+                    &nbsp&nbsp&nbsp&nbsp Arrays &nbsp&nbsp&nbsp [] <br />
+                    &nbsp&nbsp&nbsp&nbsp data &nbsp&nbsp&nbsp key and value
+                    pairs <br />
+                    &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp &nbsp&nbsp keys and values are separated by
+                    ':'<br />
+                    &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp key value pairs are separated
+                    by ','
+                  </p>
+
+                  <p class="fs-5 mb-4">
+                    Example-:<br />
+                    &nbsp&nbsp var demo = {<br />
+                    &nbsp&nbsp&nbsp&nbsp 'sub_one' : 'HTML',<br />
+                    &nbsp&nbsp&nbsp&nbsp "sub_two" : "CSS",<br />
+                    &nbsp&nbsp&nbsp&nbsp sub_three : 'Bootstrap',<br />
+                    &nbsp&nbsp&nbsp&nbsp key1 : 15<br />
+                    &nbsp&nbsp&nbsp&nbsp }<br />
+                    &nbsp&nbsp console.log(demo)<br />
+                    &nbsp&nbsp console.log(demo.sub_one, demo.sub_two,
+                    demo.sub_three,demo.key1)
+                  </p>
+                  <hr />
+                  <h5>freeze() and seal()</h5>
+                  <p class="fs-5 mb-4">
+                    Both freeze and seal are used to create non extensible
+                    objects in JavaScript, but there are plenty of differences
+                    between them.<br />
+                    Object.seal() allows changes to the existing properties of
+                    an object whereas Object.freeze() does not allow so.
+                    <table class="table table-striped ">
+                        <tbody>
+                            <tr>
+                                <td>freeze()</td>
+                                <td>-> read</td>
+                                <td>allowed</td>
+                            </tr>
+                            <tr>
+                                <td>freeze()</td>
+                                <td>-> update</td>
+                                <td>denied</td>
+                            </tr>
+                            <tr>
+                                <td>freeze()</td>
+                                <td>-> write</td>
+                                <td>denied</td>
+                            </tr>
+                            <tr>
+                                <td>freeze()</td>
+                                <td>-> delete</td>
+                                <td>denied</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <table class="table table-striped" >
+                        <tbody>
+                            <tr>
+                                <td>seal()</td>
+                                <td>-> read</td>
+                                <td>allowed</td>
+                            </tr>
+                            <tr>
+                                <td>seal()</td>
+                                <td>-> update</td>
+                                <td>allowed</td>
+                            </tr>
+                            <tr>
+                                <td>seal()</td>
+                                <td>-> write</td>
+                                <td>denied</td>
+                            </tr>
+                            <tr>
+                                <td>seal()</td>
+                                <td>-> delete</td>
+                                <td>denied</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </p>
+                  
+                </section>
+              </article>
             </div>
           </div>
         </div>
